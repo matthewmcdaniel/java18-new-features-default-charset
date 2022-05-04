@@ -8,9 +8,9 @@ not standard across machines. A Windows machine with an english locale will have
 than a Windows machine with a Japanese locale. In JDK 18, This has been solved by making UTF-8
 the default charset UTF-8 across all programs. To demonstrate this, look at the following code:
  
-1) FileWriter fw = new FileWriter("test.txt"); // cp1252 in Java 17 and below (machine-dependent)
+1) `FileWriter fw = new FileWriter("test.txt"); // cp1252 in Java 17 and below (machine-dependent)`
 
-2) FileWriter fw = new FileWriter("test.txt"); // UTF-8 in Java 18
+2) `FileWriter fw = new FileWriter("test.txt"); // UTF-8 in Java 18`
 
 Line number 1 was executed with a Java 15, line number 2 was executed with Java 18.
 
